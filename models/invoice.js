@@ -8,10 +8,6 @@ const Invoice = sequelize.define('invoice', {
       allowNull: false,
       primaryKey: true
     },
-    Amount: {
-      type: DataTypes.INTEGER,
-      allowNull: false
-    },
     Email: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -19,6 +15,22 @@ const Invoice = sequelize.define('invoice', {
         model: 'client',
         key: 'Email'
       }
+    },
+    Location: {
+        type: DataTypes.STRING,
+        allowNull: false
+    },
+    Address: {
+        type: DataTypes.STRING,
+        allowNull: false
+    },
+    Task: {
+        type: DataTypes.STRING,
+        allowNull: false
+    },
+    Amount: {
+      type: DataTypes.INTEGER,
+      allowNull: false
     },
     DueDate: {
       type: DataTypes.DATE,
