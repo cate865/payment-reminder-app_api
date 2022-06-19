@@ -5,6 +5,6 @@ import { authenticate } from "../middlewares/auth.js";
 const clientRouter = express.Router();
 
 // Add client route
-clientRouter.post('/add', addClient);
+clientRouter.post('/add', authenticate, addClient);
 
 export default clientRouter

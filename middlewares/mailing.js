@@ -1,27 +1,31 @@
 // Setting up email sending system.
 import nodemailer from "nodemailer";
 import hbs from "nodemailer-express-handlebars";
+import dotenv from "dotenv";
+import sgMail from "@sendgrid/mail";
+
+dotenv.config()
 
 var transport = nodemailer.createTransport({
-  host: "smtp.mailtrap.io",
-  port: 2525,
+  host: "smtp.sendgrid.net",
+  port: 25,
   auth: {
-    user: "2cf8bfed437413",
-    pass: "c0b934026ac9c0"
+    user: "apikey",
+    pass: process.env.SENDGRID_API_KEY
   }
 });
 
 // point to the template folder
 const handlebarOptions = {
-        viewEngine: {
-            extname: '.hbs',
-            layoutsDir: 'views/',
-            defaultLayout : 'email'
-            // partialsDir : 'views/partials/'
-        },
-        viewPath: 'views/',
-        extName: '.hbs'
-    };
+    viewEngine: {
+        extname: '.hbs',
+        layoutsDir: 'views/',
+        defaultLayout: 'invoice'
+        // partialsDir : 'views/partials/'
+    },
+    viewPath: 'views/',
+    extName: '.hbs'
+};
 
 // use a template file with nodemailer
 transport.use('compile', hbs(handlebarOptions))

@@ -36,6 +36,11 @@ const Invoice = sequelize.define('invoice', {
       type: DataTypes.DATE,
       allowNull: false
       
+    },
+    Paid: {
+        type: DataTypes.BOOLEAN,
+        allowNull: false,
+        defaultValue: false
     }
   }, {
     sequelize,
