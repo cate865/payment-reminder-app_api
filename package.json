@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cate865/SCAMP-C6-Assessment.git"
+    "url": "git+https://github.com/cate865/payment-reminder-app_api.git"
   },
   "author": "Catherine Muthoni",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/cate865/SCAMP-C6-Assessment/issues"
+    "url": "https://github.com/cate865/payment-reminder-app_api/issues"
   },
-  "homepage": "https://github.com/cate865/SCAMP-C6-Assessment#readme",
+  "homepage": "https://github.com/cate865/payment-reminder-app_api#readme",
   "dependencies": {
     "@sendgrid/mail": "^7.7.0",
     "bcrypt": "^5.0.1",
@@ -35,6 +35,8 @@
     "nodemailer": "^6.7.5",
     "nodemailer-express-handlebars": "^5.0.0",
     "nodemon": "^2.0.16",
+    "pg": "^8.9.0",
+    "pg-hstore": "^2.3.4",
     "randomstring": "^1.2.2",
     "sequelize": "^6.20.1"
   }
