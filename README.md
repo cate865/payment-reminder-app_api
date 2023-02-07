@@ -1,6 +1,6 @@
 # Payment Reminder Application
 
-Documentation: 
+Documentation: https://documenter.getpostman.com/view/18146738/2s935pqP8M
 
 ## Author: 
 Catherine Muthoni
@@ -24,6 +24,3 @@ This is a Expressjs application that enables freelancers to track their payments
 
 ## Entity Relationship Diagram(ERD)
 ![ERD](appERD.png )
-
-## Setup
-Kindly follow the instructions in this [document](https://docs.google.com/document/d/1EDI_PE81BxVJ0f4AMR1p8VwO-82YTOT3p5FqzlZcx8E/edit?usp=sharing) to setup, run and test the application.
